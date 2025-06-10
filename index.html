@@ -605,88 +605,83 @@ O <b>Sublime Hair</b> promove cabelos fortes desde a raiz até as pontas, fortal
         <div class="elementor-element elementor-element-abe0ea2 elementor-widget elementor-widget-html" data-id="abe0ea2" data-element_type="widget" data-widget_type="html.default">
           <div class="elementor-widget-container">
 
-            <!-- Novo Carrossel -->
-        <div class="carousel-container">
-          <div class="carousel-slide">
-            <img src="https://i.imgur.com/doquFUb.png" alt="Depoimento 1">
-            <img src="https://i.imgur.com/lIe8rpz.png" alt="Depoimento 2">
-            <img src="https://i.imgur.com/5M3TkDg.png" alt="Depoimento 3">
-            <img src="https://i.imgur.com/AQ4B7ec.png" alt="Depoimento 4">
-          </div>
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-        </div>
-
-        <style>
-          .carousel-container {
-            position: relative;
-            width: 100%;
-            max-width: 600px;
-            margin: auto;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-          }
-          .carousel-slide {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-          }
-          .carousel-slide img {
-            width: 100%;
-            flex-shrink: 0;
-          }
-          .prev, .next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0,0,0,0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 50%;
-            z-index: 10;
-          }
-          .prev { left: 10px; }
-          .next { right: 10px; }
-          .prev:hover, .next:hover {
-            background-color: rgba(0,0,0,0.8);
-          }
-        </style>
-
-        <script>
-          document.addEventListener('DOMContentLoaded', function() {
-            const slide = document.querySelector('.carousel-slide');
-            const images = document.querySelectorAll('.carousel-slide img');
-            const prev = document.querySelector('.prev');
-            const next = document.querySelector('.next');
-            let counter = 0;
-
-            function showSlide() {
-              slide.style.transform = `translateX(${-counter * 100}%)`;
-            }
-
-            next.addEventListener('click', () => {
-              counter = (counter + 1) % images.length;
-              showSlide();
-            });
-
-            prev.addEventListener('click', () => {
-              counter = (counter - 1 + images.length) % images.length;
-              showSlide();
-            });
-
-            setInterval(() => {
-              counter = (counter + 1) % images.length;
-              showSlide();
-            }, 4000);
-          });
-        </script>
-
-      </div>
-    </div>
+            <!-- Carrossel 2 -->
+<div class="carousel-container-2">
+  <div class="carousel-slide-2">
+    <img src="https://i.imgur.com/doquFUb.png" alt="Depoimento 1">
+    <img src="https://i.imgur.com/lIe8rpz.png" alt="Depoimento 2">
+    <img src="https://i.imgur.com/5M3TkDg.png" alt="Depoimento 3">
+    <img src="https://i.imgur.com/AQ4B7ec.png" alt="Depoimento 4">
   </div>
-</section>
+  <button class="prev-2">&#10094;</button>
+  <button class="next-2">&#10095;</button>
+</div>
+
+<style>
+  .carousel-container-2 {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  .carousel-slide-2 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .carousel-slide-2 img {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  .prev-2, .next-2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+  }
+  .prev-2 { left: 10px; }
+  .next-2 { right: 10px; }
+  .prev-2:hover, .next-2:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+</style>
+
+<script>
+  window.addEventListener('load', function () {
+    const slide2 = document.querySelector('.carousel-slide-2');
+    const images2 = document.querySelectorAll('.carousel-slide-2 img');
+    const prev2 = document.querySelector('.prev-2');
+    const next2 = document.querySelector('.next-2');
+    let counter2 = 0;
+
+    function showSlide2() {
+      slide2.style.transform = `translateX(${-counter2 * 100}%)`;
+    }
+
+    next2.addEventListener('click', () => {
+      counter2 = (counter2 + 1) % images2.length;
+      showSlide2();
+    });
+
+    prev2.addEventListener('click', () => {
+      counter2 = (counter2 - 1 + images2.length) % images2.length;
+      showSlide2();
+    });
+
+    setInterval(() => {
+      counter2 = (counter2 + 1) % images2.length;
+      showSlide2();
+    }, 4000);
+  });
+</script>
 
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-a840a90 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a840a90" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
